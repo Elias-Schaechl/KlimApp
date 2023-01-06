@@ -1,0 +1,100 @@
+html, body{
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 'nav user'
+                         'nav box';
+    grid-template-columns: minmax(200px, 0.5fr) 4fr;
+    grid-template-rows: 10em auto;
+    margin: 0;
+    background-color: #f7f6f6;
+}
+
+.navigation{
+    grid-area: nav;
+    background-color: #202123;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.logo{
+    color: #fff;
+    background-color: #202123;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+
+.navItem{
+    font-size: 1em;
+}
+
+.navItem li{
+    padding: 0.5em;
+    list-style: none;
+}
+
+.navItem li a, .navItem li i{
+    padding: 0.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navItem li i{
+    font-size: 2em;
+}
+
+.navItem li:hover{
+    background-color: #2d2d2e;
+}
+
+.welcomebox{
+    grid-area: user;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.userinfo{
+    position: relative;
+    left: 20px;
+}
+
+.userbox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 10px;
+}
+
+.profil{
+    height: 5em;
+    width: 5em;
+    border-radius: 25px;
+    margin-right: 1em;
+}
+
+.section{
+    grid-area: box;
+    display: flex;
+    flex-direction: column;
+}
+
+.subsection{
+    display: flex;
+}
+
+
+.rectangle{
+    background-color: #fff;
+    border-radius: 35px;
+    height: auto;
+    width: auto;
+    margin: 2em;
+}
