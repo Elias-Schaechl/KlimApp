@@ -16,7 +16,7 @@ body{
 .navigation{
     grid-area: nav;
     background-color: #202123;
-    height: 100%;
+    height: calc(100% - 2em);
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -52,8 +52,16 @@ body{
 
 .navItem li:hover{
     background-color: #2d2d2e;
+    border-radius: 25px;
 }
 
+.dropdown{
+    display: none;
+}
+
+.goals:hover .dropdown{
+    display: block;
+}
 .welcomebox{
     grid-area: user;
     background-color: #fff;
@@ -89,15 +97,34 @@ body{
 .subsection{
     display: flex;
     margin: 2em;
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
 }
 
 
 .rectangle{
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     border-radius: 35px;
-    height:100% ;
-    width: 100%;
+    height:calc(100% - 2em) ;
+    width: calc(100% - 2em);
     margin: 2em;
+    align-items: center;
+}
+
+.head{
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addRoutebtn{
+    margin: 2em;
+    background-color: #202123;
+    color: #fff;
+    width: 15em;
+    height: 3em;
+    border-radius: 150px;
+    font-size: 1em;
 }
