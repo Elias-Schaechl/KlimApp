@@ -1,0 +1,29 @@
+<nav class="navigation">
+  <h1 class="logo">@KlimApp</h1>
+  <ul>
+      <div class="navItem">
+          <li><a routerLink="/main">Overview</a></li>
+          <li><a routerLink="/goals">Goals</a></li>
+          <ul class="dropdown">
+              <li><a routerLink="/goals">Personal</a></li>
+              <li><a routerLink="/community-goals">Community</a></li>
+          </ul>
+          <li><a routerLink="/create-routes">Routes</a></li>
+          <li><a routerLink="/help">Help</a></li>
+      </div>
+  </ul>
+</nav>
+
+<div class="welcomebox">
+    <div class="userinfo">
+        <h2>Welcome back, Amogus</h2>
+        <a>Here are your weekly stats from your travels</a>
+    </div>
+    <div class="userbox">
+        <img class="profil" src="/amogus.png">
+        <a>Amogus Red</a>
+    </div>
+</div>
+<div class="section">
+  <router-outlet ></router-outlet>
+</div>
