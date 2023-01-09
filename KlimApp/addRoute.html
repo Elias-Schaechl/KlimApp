@@ -39,14 +39,51 @@
         </div>
 
         <div class="section">
-            <div class="rectangle">
-                <div class="subsection">
-                    <button class="addRoutebtn" onclick="window.location.href='/KlimApp/addRoute.html'">+ Add Route</button>
+            <form>
+                <div class="rectangle">
+                    <div class="subsection2">
+                        <div>
+                            <h3>Start</h3>
+                            <input type="text" id="start" placeholder="Start location">
+                            <h3>End</h3>
+                            <input type="text" id="end" placeholder="End location">
+                            <h3>Vehicle</h3>
+                            <select>
+                                <option value="Train">Train</option>
+                                <option value="Car">Car</option>
+                                <option value="Bike">Bike</option>
+                                <option value="Plane">Plane</option>
+                                <option value="Ufo">Ufo</option>
+                                <option value="Carriage">Carriage</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <h3>Date</h3>
+                            <input type="date" id="date">
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
+            
+            
+            <div class="subsection">
+                <div class="rectangle">
+                    <button class="addRoutebtn">+ Add Route</button>
                     <div>
                         sort
                     </div>
                 </div>
+                <div class="rectangle">
+                    <button class="addRoutebtn">+ Add Route</button>
+                    <div>
+                        sort
+                    </div>
+                </div>    
             </div>
+
+            <button class="addRoutebtn big">+ Add Route</button>
         </div>
     </body>
 </html>

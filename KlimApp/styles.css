@@ -99,6 +99,7 @@ body{
     margin: 2em;
     height: calc(100% - 2em);
     width: calc(100% - 2em);
+    justify-content: space-between;
 }
 
 
@@ -113,12 +114,6 @@ body{
     align-items: center;
 }
 
-.head{
-    align-self: flex-start;
-    display: flex;
-    justify-content: space-between;
-}
-
 .addRoutebtn{
     margin: 2em;
     background-color: #202123;
@@ -127,4 +122,31 @@ body{
     height: 3em;
     border-radius: 150px;
     font-size: 1em;
+}
+
+form{
+    width: calc(100% - 2em);
+}
+
+.subsection2{
+    display: flex;
+    margin: 2em;
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
+    justify-content: space-around;
+}
+
+input, select{
+    background-color: #f7f6f6;
+    color: rgb(120, 120, 120);
+    border-color: #d8d9db;
+    border-radius: 7px;
+    border-style: solid;
+    font-size: 1.5em;
+}
+
+.big{
+    width: calc(100% - 4em);
+    height: 10em;
+    font-size: 2em;
 }
