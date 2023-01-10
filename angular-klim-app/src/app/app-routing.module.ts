@@ -6,10 +6,12 @@ import { GoalComponent } from './components/goal/goal.component';
 import { HelpComponent } from './components/help/help.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainComponent } from './components/main/main.component';
+import { RoutesComponent } from './components/routes/routes.component';
 
 const routes: Routes = [
   { path: 'main', component: MainComponent},
   { path: 'create-route', component: CreateRouteComponent},
+  { path: 'routes', component: RoutesComponent},
   { path: 'goals', component: GoalComponent},
   { path: 'community-goals', component: CommunityGoalComponent},
   { path: 'login', component: LoginComponent},

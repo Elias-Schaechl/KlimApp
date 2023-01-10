@@ -9,6 +9,7 @@ import { CommunityGoalComponent } from './components/community-goal/community-go
 import { HelpComponent } from './components/help/help.component';
 import { CreateRouteComponent } from './components/create-route/create-route.component';
 import { LoginComponent } from './components/login/login.component';
+import { RoutesComponent } from './components/routes/routes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './components/login/login.component';
     CommunityGoalComponent,
     HelpComponent,
     CreateRouteComponent,
-    LoginComponent
+    LoginComponent,
+    RoutesComponent
   ],
   imports: [
     BrowserModule,
