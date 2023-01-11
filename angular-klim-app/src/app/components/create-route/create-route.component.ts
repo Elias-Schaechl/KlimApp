@@ -27,10 +27,12 @@ export class CreateRouteComponent {
     route.end = this.end
     route.vehicle = this.vehicle
     route.date = this.date
-
+    route.co2Savings = this.cO2Savings;
+    route.distance = this.traveledDistance;
     console.log(route)
     this.dataService.sendData(route).subscribe(res => {
       console.log(res);
+      this.dataService.getData();
     });
   }
 

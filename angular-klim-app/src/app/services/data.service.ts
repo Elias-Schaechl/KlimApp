@@ -99,6 +99,6 @@ export class Route {
 export class Statistics {
   totalCO2: number = 0;
   points: number = 1023;
-  nextPersonalGoal: number = 500;
+  nextPersonalGoal: number = 10000;
   goalProgress: number = 20;
 }
