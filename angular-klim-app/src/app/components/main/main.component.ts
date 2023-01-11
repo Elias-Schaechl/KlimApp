@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService, Route } from 'src/app/services/data.service';
+import { DataService, Route, Statistics } from 'src/app/services/data.service';
 
 
 @Component({
@@ -9,6 +9,8 @@ import { DataService, Route } from 'src/app/services/data.service';
 })
 export class MainComponent {
 
+  routes:Route[]
+  statistics:Statistics
 
   constructor(private dataService: DataService) {
     // dataService.getDistance('linz', 'wien').subscribe(data => {
@@ -24,7 +26,8 @@ export class MainComponent {
     //   console.log(data);
     // });
 
-    
+    this.routes = this.dataService.routes
+    this.statistics = this.dataService.statistics
     
   }
 
