@@ -1,0 +1,26 @@
+.section{
+    grid-area: box;
+    display: flex;
+    flex-direction: column;
+}
+
+.subsection{
+    display: flex;
+    margin: 2em;
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
+    justify-content: space-between;
+}
+
+
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 35px;
+    height:calc(100% - 2em) ;
+    width: calc(100% - 2em);
+    margin: 2em;
+    align-items: center;
+}
+
