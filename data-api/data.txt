@@ -4,4 +4,8 @@
 {"start": "d", "end": "r", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
 {"start": "f", "end": "h", "vehicle": "Train", "date": "", "distance": 20, "co2Savings": 33},
 {"start": "g", "end": "s", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
-{"start": "g", "end": "h", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222}]
+{"start": "g", "end": "h", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "Graz", "end": "Linz", "vehicle": "Bike", "date": "2023-01-08", "distance": 0, "co2Savings": 0}]

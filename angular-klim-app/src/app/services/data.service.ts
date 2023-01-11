@@ -25,6 +25,8 @@ export class DataService {
 
   // Send JSON object to web API
   sendData(data:Route) {
+    console.log("Sending data")
+    console.log(data)
     return this.http.put('http://localhost:8000/', data, httpOptions);
   }
 
