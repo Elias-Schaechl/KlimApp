@@ -11,10 +11,7 @@ const httpOptions = {
 export class DataService {
 
   public routes:Route[] = []
-  public totalCO2: number = 0;
-  public points: number = 1023;
-  public nextPersonalGoal: number = 500;
-  public goalProgress: number = 103;
+  public statistics:Statistics = new Statistics()
 
 
   constructor(private http: HttpClient) { }
@@ -45,18 +42,15 @@ export class DataService {
 
   resetStats() {
     this.routes = []
-    this.totalCO2 = 0;
-    this.points = 1023;
-    this.nextPersonalGoal= 500;
-    this.goalProgress = 103;
+    this.statistics = new Statistics()
   }
 
   updateStats(route:Route) {
-    let saving = route.co2Savings / this.routes.length;
-    this.totalCO2 += saving;
-    let points = saving * 0.5;
-    this.points += points;
-    this.goalProgress += points;
+    let saving =  Math.floor(route.co2Savings / this.routes.length);
+    this.statistics.totalCO2 += saving;
+    let points =  Math.floor(saving * 0.5);
+    this.statistics.points += points;
+    this.statistics.goalProgress += points;
   }
 
   prepRoute(route:Route):Route {
@@ -81,7 +75,7 @@ export class DataService {
         cO2Saving = cO2 - 400 * route.distance;
         break;
     }
-    route.co2Savings = cO2Saving;
+    route.co2Savings = Math.floor(cO2Saving);
     return route;
   }
 
@@ -98,4 +92,11 @@ export class Route {
   date: string = "";
   distance: number = 0; // In kolometern
   co2Savings: number = 0; // In gramm
+}
+
+export class Statistics {
+  totalCO2: number = 0;
+  points: number = 1023;
+  nextPersonalGoal: number = 500;
+  goalProgress: number = 20;
 }
