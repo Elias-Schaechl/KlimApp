@@ -10,6 +10,7 @@ import { HelpComponent } from './components/help/help.component';
 import { CreateRouteComponent } from './components/create-route/create-route.component';
 import { LoginComponent } from './components/login/login.component';
 import { RoutesComponent } from './components/routes/routes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RoutesComponent } from './components/routes/routes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

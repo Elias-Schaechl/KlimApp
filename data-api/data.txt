@@ -1,0 +1,5 @@
+[{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
+{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0}]
