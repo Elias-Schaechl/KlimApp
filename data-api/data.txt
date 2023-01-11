@@ -1,5 +1,7 @@
-[{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
-{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
-{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
-{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0},
-{"start": "", "end": "", "vehicle": "", "date": "", "distance": 0, "co2Savings": 0}]
+[{"start": "s", "end": "r", "vehicle": "Car", "date": "", "distance": 20, "co2Savings": 22},
+{"start": "s", "end": "d", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
+{"start": "s", "end": "f", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
+{"start": "d", "end": "r", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
+{"start": "f", "end": "h", "vehicle": "Train", "date": "", "distance": 20, "co2Savings": 33},
+{"start": "g", "end": "s", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222},
+{"start": "g", "end": "h", "vehicle": "Bike", "date": "", "distance": 20, "co2Savings": 222}]

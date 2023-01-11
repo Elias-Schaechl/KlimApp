@@ -7,7 +7,42 @@
             </div>
         </div>
         <div>
-            <!--Hier Tabelle einfügen-->
+            <table mat-table  [dataSource]="routes">
+
+                <ng-container matColumnDef="start">
+                  <th mat-header-cell *matHeaderCellDef> Start </th>
+                  <td mat-cell *matCellDef="let route"> {{route.start}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="end">
+                  <th mat-header-cell *matHeaderCellDef> End </th>
+                  <td mat-cell *matCellDef="let route"> {{route.end}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="vehicle">
+                  <th mat-header-cell *matHeaderCellDef> Vehicle </th>
+                  <td mat-cell *matCellDef="let route"> {{route.vehicle}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="date">
+                  <th mat-header-cell *matHeaderCellDef> Date </th>
+                  <td mat-cell *matCellDef="let route"> {{route.date}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="distance">
+                  <th mat-header-cell *matHeaderCellDef> Distance (km) </th>
+                  <td mat-cell *matCellDef="let route"> {{route.distance}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="co2Savings">
+                  <th mat-header-cell *matHeaderCellDef> CO2 Savings (g) </th>
+                  <td mat-cell *matCellDef="let route"> {{route.co2Savings}} </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              
+              </table>
         </div>
     </div>
 </div>

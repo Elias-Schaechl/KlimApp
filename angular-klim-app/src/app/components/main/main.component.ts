@@ -10,20 +10,26 @@ import { DataService, Route } from 'src/app/services/data.service';
 export class MainComponent {
 
 
+  constructor(private dataService: DataService) {
+    // dataService.getDistance('linz', 'wien').subscribe(data => {
+    //   console.log(data)
+    // });
 
-  constructor(dataService: DataService) {
+    // dataService.getData().subscribe(data => {
+    //   console.log("Fetched data:")
+    //   console.log(data);
+    // });
+
+    // dataService.sendData(new Route()).subscribe(data => {
+    //   console.log(data);
+    // });
+
     
-    dataService.getDistance('linz', 'wien').subscribe(data => {
-      console.log(data)
-    });
-
-    dataService.getData().subscribe(data => {
-      console.log("Fetched data:")
-      console.log(data);
-    });
-
-    dataService.sendData(new Route()).subscribe(data => {
-      console.log(data);
-    });
+    
   }
+
+  ngOnInit () {
+    this.dataService.getData();
+  }
+
 }

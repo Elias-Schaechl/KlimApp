@@ -11,6 +11,7 @@ import { CreateRouteComponent } from './components/create-route/create-route.com
 import { LoginComponent } from './components/login/login.component';
 import { RoutesComponent } from './components/routes/routes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
