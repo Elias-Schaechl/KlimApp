@@ -1,3 +1,3 @@
-[{"start": "Graz", "end": "Linz", "vehicle": "Bike", "date": "2023-01-01", "distance": 162, "co2Savings": 23490},
-{"start": "JKU LINZ", "end": "Spar Puchenau", "vehicle": "Bike", "date": "2023-01-21", "distance": 7, "co2Savings": 1015},
-{"start": "\u00d6AMTC Linz", "end": "Wissensturm", "vehicle": "Bike", "date": "2023-01-08", "distance": 2, "co2Savings": 290}]
+[{"start": "JKU LINZ", "end": "Spar Puchenau", "vehicle": "Bike", "date": "2023-01-21", "distance": 7, "co2Savings": 1015},
+{"start": "\u00d6AMTC Linz", "end": "Wissensturm", "vehicle": "Bike", "date": "2023-01-08", "distance": 2, "co2Savings": 290},
+{"start": "JKU LINZ", "end": "HBF Linz", "vehicle": "Plane", "date": "", "distance": 5, "co2Savings": -1250}]

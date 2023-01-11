@@ -2,11 +2,8 @@
     <div class="rectangle">
         <div class="subsection">
             <button class="addRoutebtn" [routerLink]="'/create-route'">+ Add Route</button>
-            <div>
-                sort
-            </div>
         </div>
-        <div>
+        
             <table mat-table  [dataSource]="routes">
 
                 <ng-container matColumnDef="start">
@@ -43,6 +40,6 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
               
               </table>
-        </div>
+        
     </div>
 </div>

@@ -1,0 +1,7 @@
+.subsection{
+    display: flex;
+    margin: 2em;
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
+    justify-content: space-between;
+}

@@ -41,6 +41,7 @@ export class CreateRouteComponent {
       console.log("Updating dist")
       this.dataService.getDistance(this.start, this.end).subscribe(dist => {
         this.traveledDistance = dist as number;
+        this.updateSaving();
       })
     }
     

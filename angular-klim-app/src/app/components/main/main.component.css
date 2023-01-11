@@ -27,3 +27,12 @@
     align-items: center;
 }
 
+.rectangle div{
+    font-size: 2em;
+}
+
+.rectangle h2{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+

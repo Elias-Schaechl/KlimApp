@@ -18,3 +18,98 @@ app-root{
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.addRoutebtn{
+    margin: 2em;
+    background-color: #202123;
+    color: #fff;
+    width: 15em;
+    height: 3em;
+    border-radius: 150px;
+    font-size: 1em;
+}
+.navigation{
+    grid-area: nav;
+    background-color: #202123;
+    height: calc(100% - 2em);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.logo{
+    color: #fff;
+    background-color: #202123;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+
+.navItem{
+    font-size: 1em;
+}
+
+.navItem li{
+    padding: 0.5em;
+    list-style: none;
+}
+
+.navItem li a, .navItem li i{
+    padding: 0.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navItem li i{
+    font-size: 2em;
+}
+
+.navItem li:hover{
+    background-color: #2d2d2e;
+    border-radius: 25px;
+}
+
+.dropdown{
+    display: none;
+}
+
+.goals:hover .dropdown{
+    display: block;
+}
+.welcomebox{
+    grid-area: user;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.userinfo{
+    position: relative;
+    left: 20px;
+}
+
+.userbox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 10px;
+}
+
+.profil{
+    height: 5em;
+    width: 5em;
+    border-radius: 25px;
+    margin-right: 1em;
+}
+
+.rectangle{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 35px;
+    height:calc(100% - 2em) ;
+    width: calc(100% - 2em);
+    margin: 2em;
+    align-items: center;
+}
