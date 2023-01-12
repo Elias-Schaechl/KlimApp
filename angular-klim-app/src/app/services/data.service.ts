@@ -36,7 +36,7 @@ export class DataService {
     let sub = this.http.get('http://localhost:8000/');
     sub.subscribe(data  =>
       (data as Route[]).forEach(route => {
-        console.log(route);
+        //console.log(route);
         this.routes.push(route);
         this.updateStats(route);
       })
@@ -52,11 +52,13 @@ export class DataService {
   }
 
   updateStats(route:Route) {
-    let saving =  Math.floor(route.co2Savings / this.routes.length);
+    console.log(route);
+    let saving =  Math.floor(route.co2Savings);
     this.statistics.totalCO2 += saving;
     let points =  Math.floor(saving * 0.5);
     this.statistics.points += points;
     this.statistics.goalProgress += points;
+    console.log(this.statistics)
   }
 
   prepRoute(route:Route):Route {
