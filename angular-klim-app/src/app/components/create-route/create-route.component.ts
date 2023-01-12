@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService, Route } from 'src/app/services/data.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class CreateRouteComponent {
   cO2Savings:number=0;
 
 
-  constructor(private dataService:DataService){
+  constructor(private dataService:DataService, private router:Router){
 
   }
 
@@ -32,7 +33,7 @@ export class CreateRouteComponent {
     console.log(route)
     this.dataService.sendData(route).subscribe(res => {
       console.log(res);
-      this.dataService.getData();
+      this.router.navigate(['/routes']);
     });
   }
 
