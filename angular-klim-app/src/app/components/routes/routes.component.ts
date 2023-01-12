@@ -12,8 +12,14 @@ export class RoutesComponent {
   routes: Route[] = []
   dataSource = new MatTableDataSource(this.routes);
   
-  constructor(dataService: DataService) {
+  constructor(private dataService: DataService) {
     this.routes = dataService.routes;
+  }
+
+  ngOnInit () {
+    this.dataService.getData().subscribe(data => {
+      this.routes = this.dataService.routes
+    });
   }
   
 

@@ -32,7 +32,10 @@ export class MainComponent {
   }
 
   ngOnInit () {
-    this.dataService.getData();
+    this.dataService.getData().subscribe(data => {
+      this.routes = this.dataService.routes
+      this.statistics = this.dataService.statistics
+    });
   }
 
 }

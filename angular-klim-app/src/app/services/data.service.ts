@@ -33,14 +33,18 @@ export class DataService {
   // Fetch list of JSON objects from web API
   getData() {
     this.resetStats();
-    return this.http.get('http://localhost:8000/').subscribe(data  =>
+    let sub = this.http.get('http://localhost:8000/');
+    sub.subscribe(data  =>
       (data as Route[]).forEach(route => {
         console.log(route);
         this.routes.push(route);
         this.updateStats(route);
       })
     )
+    return sub;
   }
+
+
 
   resetStats() {
     this.routes = []
